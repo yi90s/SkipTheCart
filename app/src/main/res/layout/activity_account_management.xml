@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorPrimary"
+		app:titleTextColor="#fff"
+		app:popupTheme="@style/AppTheme.PopupOverlay"
+		android:theme="@style/ToolbarStyle" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/linearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:orientation="vertical"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.5"
+				app:layout_constraintStart_toStartOf="parent">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/first_name"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/first_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/first_name_hint"
+					android:inputType="text"
+					android:maxLength="20"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/last_name"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/last_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/last_name_hint"
+					android:inputType="text"
+					android:maxLength="20"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/userID"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/user_id"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/user_id_hint"
+					android:inputType="text"
+					android:maxLength="20"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/password"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/password"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/password_hint"
+					android:inputType="textPassword"
+					android:maxLength="20"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/address"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/address_hint"
+					android:inputType="text"
+					android:maxLength="40"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/email"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/email_address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/email_hint"
+					android:inputType="textEmailAddress"
+					android:maxLength="40"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/phoneNum"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/phone_number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/phone_num_hint"
+					android:inputType="phone"
+					android:maxLength="12"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:id="@+id/textview_employee_number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/employee_num"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/employee_number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/employee_num_hint"
+					android:inputType="number"
+					android:maxLength="20"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:id="@+id/textview_employee_position"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/employee_position"
+					android:textColor="#000"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/employee_position"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/employee_position_hint"
+					android:inputType="text"
+					android:maxLength="40"
+					android:padding="8dp"
+					android:textSize="24sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/button_account_management"
+					style="@style/Base.Widget.AppCompat.Button.Colored"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/button_create_account"
+					android:textAlignment="center"
+					android:textSize="18sp" />
+
+				<Button
+					android:id="@+id/CenterButton"
+					style="@style/Base.Widget.AppCompat.Button.Colored"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/update_credit_card"
+					android:textAlignment="center"
+					android:textSize="18sp" />
+
+				<Button
+					android:id="@+id/logout"
+					style="@style/Base.Widget.AppCompat.Button.Colored"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/logout_button"
+					android:textAlignment="center"
+					android:textSize="18sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

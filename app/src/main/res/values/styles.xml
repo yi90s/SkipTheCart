@@ -1,0 +1,32 @@
+<resources>
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="AppTheme.PopupOverlay" parent="AppTheme" />
+
+	<style name="MyButton" parent="Theme.AppCompat.Light">
+
+		<item name="colorControlHighlight">@color/buttonActivate</item>
+		<item name="colorButtonNormal">@color/buttonDefault</item>
+	</style>
+
+	<style name="ToolbarStyle" parent="@style/Theme.AppCompat">
+
+		<item name="colorControlNormal">#fff</item>
+	</style>
+
+	<style name="this_button">
+		<item name="android:layout_width">183dp</item>
+		<item name="android:layout_height">82dp</item>
+		<item name="android:textAppearance">@android:style/TextAppearance.Holo.Large.Inverse</item>
+		<item name="android:theme">@style/MyButton</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</resources>

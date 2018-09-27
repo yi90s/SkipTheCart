@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorPrimary"
+		app:titleTextColor="#fff"
+		app:popupTheme="@style/AppTheme.PopupOverlay"
+		android:theme="@style/ToolbarStyle" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:id="@+id/product_image"
+				android:contentDescription="@string/product_image" />
+
+			<TextView
+				android:id="@+id/product_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="none"
+				android:hyphenationFrequency="none"
+				android:scrollHorizontally="false"
+				android:textSize="20sp" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/product_price"
+				android:textSize="20sp" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/product_quantity"
+				android:textSize="20sp" />
+
+			<TextView
+				android:id="@+id/product_description"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="none"
+				android:hyphenationFrequency="none"
+				android:scrollHorizontally="false"
+				android:textSize="20sp" />
+
+			<Button
+				android:id="@+id/details_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

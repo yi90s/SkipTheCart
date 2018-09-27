@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".presentation.customer.PaymentEditActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/CreditCardToolbar"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@color/colorPrimary"
+			android:theme="@style/ToolbarStyle"
+			app:popupTheme="@style/AppTheme.PopupOverlay"
+			app:titleTextColor="#fff" />
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/CardOwner"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/card_owner"
+					android:textColor="@android:color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/CardOwnerEdit"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/card_owner_hint"
+					android:inputType="text"
+					android:maxLength="22"
+					android:padding="8dp"
+					android:textSize="24sp" />
+
+				<TextView
+					android:id="@+id/CardNum"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/card_num"
+					android:textColor="@android:color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/CardNumEdit"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/card_num_hint"
+					android:inputType="number"
+					android:padding="8dp"
+					android:textSize="24sp"
+					android:maxLength="16" />
+
+				<TextView
+					android:id="@+id/VerificationCode"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/verification_code"
+					android:textColor="@android:color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<EditText
+					android:id="@+id/VerificationCodeEdit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/edit_text_background"
+					android:hint="@string/verification_code_hint"
+					android:inputType="number"
+					android:padding="8dp"
+					android:textSize="24sp"
+					android:maxLength="4" />
+
+				<TextView
+					android:id="@+id/ExpMonth"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/exp_month"
+					android:textColor="@android:color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<Spinner
+					android:id="@+id/ExpMonthSelect"
+					android:layout_width="125dp"
+					android:layout_height="58dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:dropDownWidth="125dp"
+					android:padding="8dp" />
+
+				<TextView
+					android:id="@+id/ExpYear"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/exp_year"
+					android:textColor="@android:color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<Spinner
+					android:id="@+id/ExpYearSelect"
+					android:layout_width="125dp"
+					android:layout_height="58dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:dropDownWidth="125dp"
+					android:padding="8dp" />
+
+			</LinearLayout>
+		</ScrollView>
+
+		<LinearLayout
+			android:id="@+id/ButtonsLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/RemoveCard"
+				style="@style/Base.Widget.AppCompat.Button.Colored"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:onClick="onRemoveClick"
+				android:text="@string/remove_card" />
+
+			<Button
+				android:id="@+id/UpdateCard"
+				style="@style/Base.Widget.AppCompat.Button.Colored"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:onClick="onUpdateClick"
+				android:text="@string/update_card" />
+		</LinearLayout>
+
+	</LinearLayout>
+</android.support.constraint.ConstraintLayout>

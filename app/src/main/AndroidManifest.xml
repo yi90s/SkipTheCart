@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="comp3350.skipthecart">
+
+	<application
+		android:allowBackup="false"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity android:name=".presentation.MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".presentation.customer.CustomerLoginActivity" />
+		<activity android:name=".presentation.customer.CustomerProductsListingActivity" />
+		<activity android:name=".presentation.customer.CustomerProductSearchActivity" />
+		<activity android:name=".presentation.customer.CustomerProductDetailsActivity" />
+		<activity android:name=".presentation.customer.CustomerManagementActivity" />
+		<activity android:name=".presentation.customer.PaymentEditActivity" />
+		<activity android:name=".presentation.customer.CartViewActivity" />
+		<activity android:name=".presentation.employee.EmployeeLoginActivity" />
+		<activity android:name=".presentation.employee.EmployeeProductsListingActivity" />
+		<activity android:name=".presentation.employee.EmployeeProductSearchActivity" />
+		<activity android:name=".presentation.employee.EmployeeProductDetailsActivity" />
+		<activity android:name=".presentation.employee.EmployeeManagementActivity" />
+		<activity android:name=".presentation.employee.EmployeeCartViewActivity" />
+		<activity android:name=".presentation.employee.ProductEditActivity" />
+		<activity android:name=".presentation.employee.OrdersActivity" />
+		<activity android:name=".presentation.employee.DeliveryInfoActivity" />
+	</application>
+</manifest>

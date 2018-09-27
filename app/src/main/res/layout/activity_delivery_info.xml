@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".presentation.employee.DeliveryInfoActivity">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorPrimary"
+		android:theme="@style/ToolbarStyle"
+		app:popupTheme="@style/AppTheme.PopupOverlay"
+		app:titleTextColor="#fff" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/order_id"
+		android:textSize="28sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/customer_name"
+		android:textSize="28sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/customer_address"
+		android:textSize="28sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/customer_phone"
+		android:textSize="28sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/order_total"
+		android:textSize="28sp"
+		android:textStyle="bold" />
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/delivered"
+		style="@style/Base.Widget.AppCompat.Button.Colored"
+		android:id="@+id/deliver"
+		android:onClick="onClickDeliver" />
+</LinearLayout>

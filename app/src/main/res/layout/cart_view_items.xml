@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<ImageView
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:id="@+id/image" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:maxHeight="100dp"
+			android:maxLines="4"
+			android:text="title"
+			android:textSize="24sp"
+			android:id="@+id/title" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:orientation="horizontal"
+			android:weightSum="1">
+
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="match_parent"
+				android:id="@+id/quantity"
+				android:maxHeight="50dp"
+				android:maxLines="1"
+				android:text="123"
+				android:layout_weight="0.5"
+				android:textSize="22sp" />
+
+			<TextView
+				android:layout_width="0dip"
+				android:layout_height="match_parent"
+				android:id="@+id/price"
+				android:maxLines="1"
+				android:maxHeight="50dp"
+				android:text="120"
+				android:layout_weight="0.5"
+				android:textSize="22sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

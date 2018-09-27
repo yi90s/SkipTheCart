@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorPrimary"
+		app:titleTextColor="#fff"
+		app:popupTheme="@style/AppTheme.PopupOverlay"
+		android:theme="@style/ToolbarStyle" />
+
+	<TextView
+		android:id="@+id/noProducts"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="@string/no_products"
+		android:textSize="24sp"
+		android:visibility="gone" />
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/main_layer"
+		android:layout_marginTop="50dp">
+
+		<GridView
+			android:id="@+id/gridView"
+			android:numColumns="auto_fit"
+			android:gravity="center"
+			android:columnWidth="170dp"
+			android:layout_margin="3dp"
+			android:verticalSpacing="2dp"
+			android:horizontalSpacing="2dp"
+			android:stretchMode="columnWidth"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="top" />
+
+		<FrameLayout
+			android:id="@+id/cart_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|bottom">
+
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/cart_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end|bottom"
+				android:layout_margin="16dp"
+				android:src="@drawable/cart_icon"
+				app:backgroundTint="@color/colorPrimary" />
+
+			<TextView
+				android:id="@+id/cart_badge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="top|end"
+				android:layout_marginStart="5dp"
+				android:background="@drawable/cart_badge_background"
+				android:elevation="7dp"
+				android:text="@string/_0"
+				android:textColor="#FFF"
+				android:textSize="18sp" />
+		</FrameLayout>
+
+		<FrameLayout
+			android:id="@+id/add_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|bottom"
+			android:layout_marginBottom="80dp">
+
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/add_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end|bottom"
+				android:layout_margin="16dp"
+				android:src="@drawable/add"
+				app:backgroundTint="@color/colorPrimary" />
+
+		</FrameLayout>
+	</FrameLayout>
+</RelativeLayout>
