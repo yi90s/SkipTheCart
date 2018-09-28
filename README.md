@@ -1,5 +1,7 @@
 # SkipTheCart Vision Statement
 
+Original GitLab session(Internal access): https://code.cs.umanitoba.ca/comp3350-summer2018/trACEroute.git
+
 SkipTheCart will be an application that provides Winnipeg shoppers the
 opportunity to browse, order and have same-day delivery of fresh and packaged
 grocery items from the store to their homes or places of business.
