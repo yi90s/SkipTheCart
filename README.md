@@ -47,4 +47,4 @@ Winnipeg supermarket chain (after a period of 6 months from initial release).
 
 Original GitLab session(Internal access): https://code.cs.umanitoba.ca/comp3350-summer2018/trACEroute.git
 
-Team members:Chris Chmelyk, Gouthanm Rao Dhannapuneni, Justin Gouge, Ronald Malixi, Yi Peng
+Team members: Chris Chmelyk, Gouthanm Rao Dhannapuneni, Justin Gouge, Ronald Malixi, Yi Peng
